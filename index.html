@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Happy Birthday</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+
+        <div class="loader">
+      <span style="--i:1;">j</span>
+      <span style="--i:2;">u</span>
+      <span style="--i:3;">s</span>
+      <span style="--i:4;">t </span>
+      <span style="--i:5;">_</span>
+      <span style="--i:5;">s</span>
+      <span style="--i:6;">c</span>
+      <span style="--i:7;">r</span>
+      <span style="--i:8;">o</span>
+      <span style="--i:9;">l</span>
+      <span style="--i:10;">l </span>
+      <span style="--i:5;">_</span>
+      <span style="--i:1;">d</span>
+      <span style="--i:2;">o</span>
+      <span style="--i:3;">w</span>
+      <span style="--i:4;">n</span>
+      <span style="--i:5;">_</span>
+      <span style="--i:5;"> m</span>
+      <span style="--i:6;">a</span>
+      <span style="--i:7;">t</span>
+      <span style="--i:8;">e</span>
+      <span style="--i:9;">.</span>
+      <span style="--i:10;">.</span>
+    </div>
+
+        <div class="box">
+            <h2 class="text1">Hi,</h2>
+            <h2 class="text2">Sorry i will not be able to visit you on your b'day</h2>
+            <h2 class="text3">So i made this for you.</h2>
+            <img class="logo" src="hbd.jfif">
+        </div>
+        <div class="box2">
+            <h2 class="text4">Many happy returns of the day!</h2>
+            <h2 class="text5">Wishing you an awesome birthday.</h2>
+            <h2 class="text6">Hope to see you soon..</h2>
+        </div>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.js"></script>
+         <script type="text/javascript">
+            gsap.timeline({
+              scrollTrigger: {
+                trigger: ".box",
+                start: "center center",
+                end: "bottom top",
+                scrub: 0.5,
+                pin: true,
+              }
+            })
+          .from(".text1",  { x: innerWidth * -1 })
+          .from(".text2", { x: innerWidth * 1 })
+          .from(".text3", { x: innerWidth * -1 })
+          .from(".logo", {
+            y: innerHeight * 1,
+            rotate : 360
+          })
+
+          
+
+          gsap.timeline({
+              scrollTrigger: {
+                trigger: ".box2",
+                start: "center center",
+                end: "bottom top",
+                scrub: 0.5,
+                pin: true,
+              },
+            })
+          .from(".box2",  { opacity : 1})
+          .from(".text4",  { x: innerWidth * 1 })
+          .from(".text5", { y: innerHeight * 1 })
+          .from(".text6", { y: innerHeight * 1 })
+         </script>
+	</body>
+</html>
