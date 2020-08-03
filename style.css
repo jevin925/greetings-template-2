@@ -126,6 +126,10 @@ body
 	font-size: 3em;
 	padding: 50px 0px;
 }
+.box2 img
+{
+	max-width: 300px;
+}
 
 @media (max-width: 700px){
 	.box2 h2{
