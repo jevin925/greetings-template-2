@@ -100,7 +100,7 @@ body
 
 @media (max-width: 700px){
 	.box h2{
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 }
 .box img
@@ -133,6 +133,6 @@ body
 
 @media (max-width: 700px){
 	.box2 h2{
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 }
