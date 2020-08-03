@@ -56,7 +56,7 @@ body
 
 @media (max-width: 700px){
 	.loader span{
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 }
 @keyframes animate
@@ -102,6 +102,9 @@ body
 	.box h2{
 		font-size: 1rem;
 	}
+        .box img {
+          max-width: 250px
+}
 }
 .box img
 {
@@ -135,4 +138,7 @@ body
 	.box2 h2{
 		font-size: 1rem;
 	}
+        .box2 img {
+          max-width: 250px
+}
 }
