@@ -101,6 +101,7 @@ body
 @media (max-width: 700px){
 	.box h2{
 		font-size: 1rem;
+                padding: 30px 0px;
 	}
         .box img {
           max-width: 250px
