@@ -99,10 +99,7 @@ body
 
 
 @media (max-width: 700px){
-        .box { 
-            height: 0px;
-            padding: 0px;
-}
+    
 	.box h2{
 		font-size: 1rem;
                 padding: 20px 0px;
